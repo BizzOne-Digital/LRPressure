@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand color system - matched to the LR Pressure Washing logo (black + deep crimson red) */
+  --primary: 17, 17, 17;            /* logo black */
+  --primary-darker: 0, 0, 0;
+  --primary-lighter: 40, 40, 40;
+  --primary-contrast: 255, 255, 255;
+
+  --secondary: 144, 0, 24;          /* logo crimson red, sampled from the artwork */
+  --secondary-darker: 104, 0, 17;
+  --secondary-lighter: 196, 64, 88;
+  --secondary-contrast: 255, 255, 255;
+
+  --derivative-50: 245, 245, 245;
+  --derivative-100: 229, 229, 229;
+  --derivative-200: 212, 212, 212;
+  --derivative-400: 115, 115, 115;
+  --derivative-500: 82, 82, 82;
+  --derivative-700: 51, 51, 51;
+  --derivative-900: 17, 17, 17;
+
+  --radius-pill: 28px;
+  --background: #ffffff;
+  --foreground: rgb(var(--primary));
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary: rgb(var(--primary));
+  --color-primary-darker: rgb(var(--primary-darker));
+  --color-primary-lighter: rgb(var(--primary-lighter));
+  --color-primary-contrast: rgb(var(--primary-contrast));
+
+  --color-secondary: rgb(var(--secondary));
+  --color-secondary-darker: rgb(var(--secondary-darker));
+  --color-secondary-lighter: rgb(var(--secondary-lighter));
+  --color-secondary-contrast: rgb(var(--secondary-contrast));
+
+  --color-derivative-50: rgb(var(--derivative-50));
+  --color-derivative-100: rgb(var(--derivative-100));
+  --color-derivative-200: rgb(var(--derivative-200));
+  --color-derivative-400: rgb(var(--derivative-400));
+  --color-derivative-500: rgb(var(--derivative-500));
+  --color-derivative-700: rgb(var(--derivative-700));
+  --color-derivative-900: rgb(var(--derivative-900));
+
+  --font-heading: var(--font-archivo);
+  --font-body: var(--font-montserrat);
+
+  --radius-dynamic: var(--radius-pill);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-heading {
+  font-family: var(--font-heading), ui-sans-serif, system-ui, sans-serif;
+}
+
+.rounded-dynamic {
+  border-radius: var(--radius-pill);
+}
+
+.section-intro {
+  display: inline-block;
+  font-family: var(--font-body), sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgb(var(--secondary-darker));
+  margin-bottom: 0.5rem;
+}
+
+.highlight-word {
+  color: rgb(var(--secondary));
+}
+
+/* fade/slide-up scroll reveal fallback for no-JS */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
