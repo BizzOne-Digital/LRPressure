@@ -10,7 +10,7 @@ export default function PageHero({
   subheading?: string;
 }) {
   return (
-    <section className="bg-gradient-to-br from-primary to-primary-lighter py-20 sm:py-28">
+    <section className="bg-gradient-to-br from-primary to-primary-lighter pt-28 pb-20 sm:pt-36 sm:pb-28">
       <Container className="text-center">
         {eyebrow && (
           <span className="section-intro !text-secondary">{eyebrow}</span>

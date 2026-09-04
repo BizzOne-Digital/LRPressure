@@ -12,6 +12,7 @@ export default function Header() {
   const [servicesOpen, setServicesOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     function onClick(e: MouseEvent) {
@@ -30,12 +31,25 @@ export default function Header() {
     };
   }, [mobileOpen]);
 
+  useEffect(() => {
+    function onScroll() {
+      setScrolled(window.scrollY > 40);
+    }
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <nav
       aria-label="Main Navigation"
-      className="sticky top-0 left-0 right-0 z-30 bg-white shadow-sm"
+      className={`fixed inset-x-3 top-3 z-40 mx-auto max-w-7xl rounded-full transition-colors duration-300 sm:inset-x-6 sm:top-4 ${
+        scrolled
+          ? "bg-white shadow-md"
+          : "bg-primary/10 shadow-[0_8px_32px_rgba(0,0,0,0.25)] backdrop-blur-2xl backdrop-saturate-150"
+      }`}
     >
-      <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-4 sm:px-4 xl:px-0">
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-2.5 sm:px-6 sm:py-3">
         <Link href="/" className="relative flex h-10 w-[151px] flex-shrink-0 items-center sm:h-12 sm:w-[181px]">
           <Image
             src="/images/logo.png"
@@ -53,7 +67,7 @@ export default function Header() {
             <button
               type="button"
               onClick={() => setServicesOpen((v) => !v)}
-              className="inline-flex items-center gap-x-1.5 font-medium text-derivative-700 hover:text-primary"
+              className={`inline-flex items-center gap-x-1.5 font-medium transition-colors ${scrolled ? "text-derivative-700 hover:text-primary" : "text-white hover:text-white/80"}`}
               aria-haspopup="menu"
               aria-expanded={servicesOpen}
             >
@@ -67,7 +81,7 @@ export default function Header() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -8 }}
                   transition={{ duration: 0.15 }}
-                  className="absolute left-0 top-full z-40 mt-3 w-56 overflow-hidden rounded-dynamic bg-primary/50 p-1 shadow-[0_20px_40px_rgba(4,6,8,0.2),0_8px_16px_rgba(4,6,8,0.15),inset_0_1px_0_rgba(238,244,246,0.2)] backdrop-blur-[32px] backdrop-saturate-200 backdrop-brightness-110"
+                  className="absolute left-0 top-full z-40 mt-3 w-56 overflow-hidden rounded-dynamic bg-primary/70 p-1 shadow-[0_20px_40px_rgba(4,6,8,0.2),0_8px_16px_rgba(4,6,8,0.15),inset_0_1px_0_rgba(238,244,246,0.2)] backdrop-blur-[24px] backdrop-saturate-200 backdrop-brightness-110"
                 >
                   {services.map((s) => (
                     <Link
@@ -83,13 +97,15 @@ export default function Header() {
             </AnimatePresence>
           </div>
           {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className="font-medium text-derivative-700 hover:text-primary whitespace-nowrap">
+            <Link key={link.href} href={link.href} className={`font-medium whitespace-nowrap transition-colors ${scrolled ? "text-derivative-700 hover:text-primary" : "text-white hover:text-white/80"}`}>
               {link.label}
             </Link>
           ))}
           <div className="flex flex-shrink-0 items-center gap-3">
             <PrimaryButton href="/contact-us" className="px-4 py-3 text-sm">GET A FREE QUOTE</PrimaryButton>
-            <SecondaryButton className="px-4 py-3 text-sm" />
+            <SecondaryButton
+              className={`px-4 py-3 text-sm transition-colors ${scrolled ? "" : "!border-white !text-white"}`}
+            />
           </div>
         </div>
 
@@ -97,7 +113,7 @@ export default function Header() {
         <button
           type="button"
           onClick={() => setMobileOpen(true)}
-          className="flex h-12 w-12 items-center justify-center rounded-full bg-derivative-50 text-primary lg:hidden"
+          className={`flex h-12 w-12 items-center justify-center rounded-full transition-colors lg:hidden ${scrolled ? "bg-derivative-50 text-primary" : "bg-white/15 text-white backdrop-blur-sm"}`}
           aria-label="Open menu"
         >
           <Menu className="h-6 w-6" />
