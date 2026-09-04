@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="relative">
       <div className="absolute inset-0 -z-10">
         <Image
-          src="/images/hero/hero-home.jpeg"
+          src="/images/hero/hero-home.jpg"
           alt={`Hero image for ${company.legalName}`}
           fill
           priority
