@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { team } from "@/data/site";
 import { Container, SectionIntro } from "./ui";
 import ScrollReveal from "./ScrollReveal";
@@ -17,7 +18,19 @@ export default function TeamSection() {
           {team.map((member, i) => (
             <ScrollReveal key={`${member.name}-${i}`} delay={i * 0.06} className="text-center">
               <div className="mx-auto flex aspect-square w-full items-center justify-center overflow-hidden rounded-dynamic bg-primary transition-transform duration-500 hover:scale-105">
-                <span className="font-heading text-3xl font-black text-secondary sm:text-4xl">{member.initials}</span>
+                {member.photo ? (
+                  <div className="relative h-full w-full">
+                    <Image
+                      src={member.photo}
+                      alt={member.name}
+                      fill
+                      sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, 20vw"
+                      className="object-cover object-top"
+                    />
+                  </div>
+                ) : (
+                  <span className="font-heading text-3xl font-black text-secondary sm:text-4xl">{member.initials}</span>
+                )}
               </div>
               <p className="mt-3 font-heading font-bold text-derivative-900">{member.name}</p>
               {member.role && <p className="text-xs text-derivative-700">{member.role}</p>}

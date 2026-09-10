@@ -1,21 +1,29 @@
 import type { Metadata } from "next";
-import { Archivo, Montserrat } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MobileBottomBar from "@/components/MobileBottomBar";
 import { company } from "@/data/site";
 
-const archivo = Archivo({
+// Self-hosted (not fetched from Google at build time). Both files are true variable
+// fonts covering the full weight axis, so a single file per family covers every
+// weight used across the site (font-weight classes select the instance at render time).
+// This avoids the "Can't resolve '@vercel/turbopack-next/internal/font/google/font'"
+// Turbopack build error, which happens when next/font/google can't reach Google's
+// font servers during the build (offline, firewall, or flaky network).
+const archivo = localFont({
+  src: "../fonts/Archivo-Variable.woff2",
   variable: "--font-archivo",
-  subsets: ["latin"],
-  weight: ["600", "700", "800", "900"],
+  weight: "100 900",
+  display: "swap",
 });
 
-const montserrat = Montserrat({
+const montserrat = localFont({
+  src: "../fonts/Montserrat-Variable.woff2",
   variable: "--font-montserrat",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: "100 900",
+  display: "swap",
 });
 
 export const metadata: Metadata = {

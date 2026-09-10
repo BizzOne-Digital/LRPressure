@@ -360,13 +360,13 @@ export const whyChooseUs = {
   ],
 };
 
-// Luis is LR Pressure Washing's real owner/contact. The rest of the crew is still
-// placeholder (initials-only, no photos) until real team info is provided.
-export const team = [
-  { name: "Luis", role: "Owner", initials: "L" },
-  { name: "Technician", role: "Crew", initials: "T1" },
-  { name: "Technician", role: "Crew", initials: "T2" },
-  { name: "Technician", role: "Crew", initials: "T3" },
+// Luis is the owner/contact (featured elsewhere on the site, e.g. Contact page) and is
+// intentionally left out of this crew grid, which shows on-the-job technicians only.
+// The first technician's name is still pending from the client.
+export type TeamMember = { name: string; role?: string; initials: string; photo?: string };
+export const team: TeamMember[] = [
+  { name: "Technician", role: "Crew", initials: "T", photo: "/images/team/technician-1.jpg" },
+  { name: "Thomas", role: "Crew", initials: "T", photo: "/images/team/thomas.jpg" },
 ];
 
 export const coreValues = [
