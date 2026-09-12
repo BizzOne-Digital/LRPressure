@@ -41,7 +41,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-8 max-w-xl font-body text-base leading-relaxed text-white/90 sm:text-lg">
-            Philadelphia&apos;s top-rated pressure washing &amp; window cleaning company. Cleaner
+            King of Prussia&apos;s top-rated pressure washing &amp; window cleaning company. Cleaner
             windows. Brighter exteriors. Like-new driveways. Our mission is simple: deliver reliable, affordable,
             professional exterior care that consistently exceeds your expectations.
           </p>

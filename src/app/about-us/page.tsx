@@ -17,7 +17,7 @@ export default function AboutPage() {
     <>
       <PageHero
         eyebrow="About Us"
-        heading="Top-Tier Power Washing Services in Philadelphia"
+        heading="Top-Tier Power Washing Services in King of Prussia"
         subheading="Transforming Homes with Expert Pressure Washing – Where Excellence Meets Integrity."
       />
 
@@ -30,7 +30,7 @@ export default function AboutPage() {
           <div className="space-y-4 text-left font-body leading-relaxed text-derivative-700 sm:text-lg">
             <p>{company.founderStory}</p>
             <p>
-              Founded in {company.founded}, {company.shortName} proudly serves Philadelphia and the
+              Founded in {company.founded}, {company.shortName} proudly serves King of Prussia and the
               surrounding Pennsylvania and New Jersey suburbs — combining hands-on experience with
               professional expertise to achieve pristine results on every property we touch.
             </p>

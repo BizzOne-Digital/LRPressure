@@ -7,18 +7,18 @@ export const company = {
   logoTop: "LR",
   logoBottom: "PRESSURE WASHING",
   contactPerson: "Luis",
-  phoneDisplay: "(267) 980-4171",
-  phoneRaw: "+12679804171",
-  email: "lramirezphilly1@gmail.com",
+  phoneDisplay: "(484) 254-4136",
+  phoneRaw: "+14842544136",
+  email: "support@lrpowerwashing.com",
   website: "https://www.lrpowerwashing.com",
   // No fixed street address published (mobile service) — city/state describe the service area.
   address: {
-    line1: "Serving the Philadelphia metro area",
-    city: "Philadelphia",
+    line1: "Serving King of Prussia and surrounding areas",
+    city: "King of Prussia",
     state: "PA",
     zip: "",
   },
-  hours: "Monday – Sunday: 8:00 AM – 8:00 PM",
+  hours: "Open 24 Hours",
   facebook: "https://www.lrpowerwashing.com",
   founded: 2020,
   founderStory:
@@ -71,14 +71,14 @@ export const services: Service[] = [
     ],
     faqs: [
       { question: "What is house washing?", answer: "House washing is a thorough cleaning process for the exterior of your home. It removes dirt, grime, mold, and other unsightly stains to restore and boost your home's curb appeal." },
-      { question: "Why should I choose LR Pressure Washing for house washing?", answer: "With our skilled team and the latest equipment, we're dedicated to delivering excellent results. We've built our reputation in Philadelphia and the surrounding suburbs through our focus on customer satisfaction and effective, professional service." },
+      { question: "Why should I choose LR Pressure Washing for house washing?", answer: "With our skilled team and the latest equipment, we're dedicated to delivering excellent results. We've built our reputation in King of Prussia and the surrounding areas through our focus on customer satisfaction and effective, professional service." },
       { question: "Will house washing damage my siding or windows?", answer: "No, our techniques are designed to be gentle yet effective. We use the right pressure and cleaning solutions to clean surfaces without causing harm." },
       { question: "How often should I have my house washed?", answer: "It's generally recommended to wash your house once a year to prevent the buildup of dirt and algae, especially in damp areas." },
       { question: "Do you offer any guarantees?", answer: "Yes, your satisfaction is guaranteed. If you're not happy with the results, we'll come back and make it right." },
-      { question: "How do I schedule a house washing appointment?", answer: "You can book directly through our website or call us at (267) 980-4171 to schedule now." },
+      { question: "How do I schedule a house washing appointment?", answer: "You can book directly through our website or call us at (484) 254-4136 to schedule now." },
     ],
     finalCtaHeading: "Revitalize Your Home Today!",
-    finalCtaText: "Call (267) 980-4171 to schedule now!",
+    finalCtaText: "Call (484) 254-4136 to schedule now!",
   },
   {
     slug: "roof-washing",
@@ -94,7 +94,7 @@ export const services: Service[] = [
       { title: "Healthier Home Environment", description: "Removing algae and mold prevents spores from entering your home and affecting air quality." },
     ],
     differentiators: [
-      { title: "Expertise", description: "Years of hands-on roof washing experience across the Philadelphia metro area." },
+      { title: "Expertise", description: "Years of hands-on roof washing experience across King of Prussia and the surrounding areas." },
       { title: "Local Understanding", description: "We know how the local climate affects roofs in our area." },
       { title: "Community Trust", description: "Hundreds of five-star reviews from neighbors just like you." },
       { title: "Reliable Service", description: "On-time, communicative, and thorough from start to finish." },
@@ -114,7 +114,7 @@ export const services: Service[] = [
       { question: "Will it actually improve my roof's condition?", answer: "Yes. Removing algae and moss buildup helps prevent premature shingle deterioration." },
     ],
     finalCtaHeading: "Revitalize Your Roof Today!",
-    finalCtaText: "Call (267) 980-4171 to schedule now!",
+    finalCtaText: "Call (484) 254-4136 to schedule now!",
   },
   {
     slug: "exterior-window-cleaning",
@@ -143,7 +143,7 @@ export const services: Service[] = [
       { question: "What makes you different?", answer: "Our attention to detail and streak-free guarantee set us apart from the competition." },
     ],
     finalCtaHeading: "Transform Your Home Today!",
-    finalCtaText: "Experience pristine windows now. Call (267) 980-4171 to book your exterior window cleaning.",
+    finalCtaText: "Experience pristine windows now. Call (484) 254-4136 to book your exterior window cleaning.",
   },
   {
     slug: "interior-window-cleaning",
@@ -170,10 +170,10 @@ export const services: Service[] = [
       { question: "How should I prepare before you arrive?", answer: "Ensure access to windows is clear and any fragile items nearby are removed." },
       { question: "How do you prevent making a mess indoors?", answer: "Our team is trained to leave your space exactly as we found it." },
       { question: "Do you offer evening or weekend availability?", answer: "We work standard weekdays, but contact us to discuss flexible scheduling." },
-      { question: "How do I book a service?", answer: "Book online through our forms or call us at (267) 980-4171." },
+      { question: "How do I book a service?", answer: "Book online through our forms or call us at (484) 254-4136." },
     ],
     finalCtaHeading: "Crystal-Clear Views Await You!",
-    finalCtaText: "Call (267) 980-4171 to transform your home now.",
+    finalCtaText: "Call (484) 254-4136 to transform your home now.",
   },
   {
     slug: "christmas-light-installation",
@@ -192,7 +192,7 @@ export const services: Service[] = [
       { title: "Experience", description: "Our team brings hands-on industry experience installing holiday lighting." },
       { title: "Safety First", description: "Ensuring the safety of your home and family is our top priority." },
       { title: "Customer Satisfaction", description: "Open communication and reliability are at the core of everything we do." },
-      { title: "Quality Commitment", description: "We've established a reputation for excellence across the Philadelphia area." },
+      { title: "Quality Commitment", description: "We've established a reputation for excellence across King of Prussia and the surrounding areas." },
     ],
     process: [
       { title: "Personalized Consultation", description: "We visit your home for a detailed discussion about your Christmas light vision." },
@@ -206,10 +206,10 @@ export const services: Service[] = [
       { question: "Is maintenance included?", answer: "Absolutely! Our service includes regular monitoring and maintenance through the season." },
       { question: "Will installation damage my property?", answer: "Not at all. Our experienced team uses methods that protect your roofline and landscaping." },
       { question: "When do you remove the lights?", answer: "Usually in early January, at a time that works for you." },
-      { question: "How do I book installation?", answer: "Contact us at (267) 980-4171, or use our online booking system." },
+      { question: "How do I book installation?", answer: "Contact us at (484) 254-4136, or use our online booking system." },
     ],
     finalCtaHeading: "Book Today and Let Us Handle the Magic!",
-    finalCtaText: "Spaces fill fast — call (267) 980-4171 to reserve your date.",
+    finalCtaText: "Spaces fill fast — call (484) 254-4136 to reserve your date.",
   },
   {
     slug: "pressure-washing",
@@ -245,7 +245,7 @@ export const services: Service[] = [
 export const testimonials = [
   { name: "Debbie S.", rating: 5, text: "Ryan and Wil just cleaned all our windows, sills and screens they did an exceptional job! They were very professional and meticulous!" },
   { name: "Anne K.", rating: 5, text: "Fantastic results! I had the driveway, sidewalk and patio cleaned and it looks fantastic! Thank you!" },
-  { name: "Jonathan W.", rating: 5, text: "Guys did a great job. Highly recommend LR Pressure Washing for anyone in the Philadelphia area." },
+  { name: "Jonathan W.", rating: 5, text: "Guys did a great job. Highly recommend LR Pressure Washing for anyone in the King of Prussia area." },
   { name: "Keith W.", rating: 5, text: "Fantastic job, great price, they have all the right equipment fast and excellent work." },
   { name: "Jim W.", rating: 5, text: "Great experience with LR Pressure Washing! Driveway looks like new and the service was on schedule." },
   { name: "Chris J.", rating: 5, text: "Fantastic, professional job! I was really happy with their service and communication." },
@@ -349,24 +349,23 @@ export const pricingGroups: PricingGroup[] = [
 
 export const whyChooseUs = {
   eyebrow: "WHY CHOOSE US",
-  subtitle: "Philadelphia's Most Trusted Power Washers",
+  subtitle: "King of Prussia's Most Trusted Power Washers",
   features: [
     { icon: "Users", title: "Expert Team", description: "Experienced technicians delivering outstanding results" },
-    { icon: "MapPin", title: "Local Excellence", description: "Philadelphia-based, understanding Pennsylvania & New Jersey homes" },
+    { icon: "MapPin", title: "Local Excellence", description: "King of Prussia-based, understanding Pennsylvania & New Jersey homes" },
     { icon: "CheckCircle2", title: "Eco-Friendly", description: "Safe, environmentally responsible cleaning methods" },
     { icon: "Heart", title: "Community Driven", description: "2,000+ reviews goal, committed to customer satisfaction" },
     { icon: "Star", title: "Premium Equipment", description: "State-of-the-art tools for superior results" },
-    { icon: "Clock", title: "Established Since 2020", description: "6 years of experience delivering exceptional service to Philadelphia-area homes" },
+    { icon: "Clock", title: "Established Since 2020", description: "6 years of experience delivering exceptional service to King of Prussia-area homes" },
   ],
 };
 
 // Luis is the owner/contact (featured elsewhere on the site, e.g. Contact page) and is
 // intentionally left out of this crew grid, which shows on-the-job technicians only.
-// The first technician's name is still pending from the client.
 export type TeamMember = { name: string; role?: string; initials: string; photo?: string };
 export const team: TeamMember[] = [
-  { name: "Technician", role: "Crew", initials: "T", photo: "/images/team/technician-1.jpg" },
-  { name: "Thomas", role: "Crew", initials: "T", photo: "/images/team/thomas.jpg" },
+  { name: "Aaren J", role: "Crew", initials: "A", photo: "/images/team/technician-1.jpg" },
+  { name: "Thomas M", role: "Crew", initials: "T", photo: "/images/team/thomas.jpg" },
 ];
 
 export const coreValues = [
@@ -378,14 +377,14 @@ export const coreValues = [
 
 type Area = { name: string; state: "PA" | "NJ" };
 
-// Philadelphia metro area (PA suburbs)
+// King of Prussia metro area (PA suburbs)
 const paAreas: string[] = [
+  "King of Prussia", "Norristown", "Conshohocken", "Plymouth Meeting", "Blue Bell", "Wayne",
+  "Bryn Mawr", "Radnor", "Malvern", "Exton", "Ardmore", "Havertown",
+  "Newtown Square", "Media", "Springfield", "Upper Darby", "Drexel Hill", "Chester",
   "Philadelphia", "Bensalem", "Levittown", "Feasterville-Trevose", "Bristol", "Doylestown",
   "Warminster", "Warrington", "Horsham", "Ambler", "Lansdale", "North Wales",
   "Willow Grove", "Abington", "Jenkintown", "Glenside", "Cheltenham", "Elkins Park",
-  "King of Prussia", "Norristown", "Conshohocken", "Plymouth Meeting", "Blue Bell", "Wayne",
-  "Bryn Mawr", "Radnor", "Havertown", "Media", "Springfield", "Newtown Square",
-  "Chester", "Upper Darby", "Drexel Hill", "Ardmore", "Malvern", "Exton",
 ];
 
 // South Jersey (across the river)

@@ -54,7 +54,7 @@ export default function ReviewsPage() {
           </ScrollReveal>
         </Container>
       </section>
-      <CTASection heading="Join our happy customers" text={`Get a free quote today and see why homeowners across the Philadelphia area trust ${company.shortName}.`} />
+      <CTASection heading="Join our happy customers" text={`Get a free quote today and see why homeowners across the King of Prussia area trust ${company.shortName}.`} />
     </>
   );
 }

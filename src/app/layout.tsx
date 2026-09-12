@@ -29,15 +29,15 @@ const montserrat = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL(company.website),
   title: {
-    default: `Power Washing Philadelphia | Trusted Home Cleaning | ${company.shortName}`,
+    default: `Power Washing King of Prussia | Trusted Home Cleaning | ${company.shortName}`,
     template: `%s | ${company.shortName}`,
   },
   description:
-    "Philadelphia's top-rated pressure washing & window cleaning company. House washing, roof washing, window cleaning, and more.",
+    "King of Prussia's top-rated pressure washing & window cleaning company. House washing, roof washing, window cleaning, and more.",
   openGraph: {
-    title: `Power Washing Philadelphia | Trusted Home Cleaning | ${company.shortName}`,
+    title: `Power Washing King of Prussia | Trusted Home Cleaning | ${company.shortName}`,
     description:
-      "Philadelphia's top-rated pressure washing & window cleaning company.",
+      "King of Prussia's top-rated pressure washing & window cleaning company.",
     siteName: company.shortName,
     type: "website",
   },

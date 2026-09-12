@@ -13,7 +13,7 @@ export default function ServiceAreasSection() {
             We&apos;re here to help
           </h2>
           <p className="mx-auto max-w-xl font-body text-derivative-700">
-            Proudly serving Philadelphia and the surrounding Pennsylvania & New Jersey suburbs.
+            Proudly serving King of Prussia and the surrounding Pennsylvania & New Jersey suburbs.
           </p>
         </div>
         <ScrollReveal delay={0.1}>
